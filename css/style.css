@@ -1,0 +1,274 @@
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,
+body{
+	height: 100%;
+}
+
+body {
+	font-family: 'Noto Sans TC', sans-serif;
+}
+
+#top{
+	width: 100%;
+	height: 75px;
+	background: #000;
+	top: 0;
+	display: flex;
+	align-items: center;
+	position: fixed;
+}
+
+#top .logo {
+	width: 260px;
+	height: 58px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-360%, -50%);
+}
+
+#top .search .find2 i {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(1500%, -50%);
+}
+
+.search {
+	display: flex;
+    margin: 0 auto;
+}
+
+.find {
+	width: 500px;
+	height: 40px;
+	background-color: #fff;
+	border-radius: 30px 0 0 30px;
+	border: #aaa 1px solid;
+	box-shadow: inset 1px 1px 1px 1px #aaa;
+	text-align: center;
+}
+
+.find:hover {
+	width: 500px;
+	height: 40px;
+	background-color: #fff;
+	border-radius: 30px 0 0 30px;
+	border: #aaa 1px solid;
+	box-shadow: inset 1px 1px 1px 1px #aaa;
+	background: #f0ebeb;
+}
+
+.find2 {
+	width: 50px;
+	height: 40px;
+	background-color: #fff;
+	border-radius: 0 30px 30px 0;
+	border: #aaa 1px solid;
+	box-shadow: inset 1px 1px 1px 1px #aaa;
+    text-align: center;
+}
+
+.find2:hover {
+	width: 50px;
+	height: 40px;
+	background-color: #fff;
+	border-radius: 0 30px 30px 0;
+	border: #aaa 1px solid;
+	box-shadow: inset 1px 1px 1px 1px;
+	background-color: #f0ebeb;
+}
+
+.logo{
+	height: 30px;;
+    width: 134px;
+	position: absolute;
+	top: 0;
+	left: 100;
+}
+
+
+#sidebar {
+	width: 15%;
+	height: calc(100vh - 75px);
+	position: fixed;
+	left: 0;
+	top: 75px;
+	background: #000;
+	color: #fff;
+	overflow-y: scroll;
+	text-decoration: none;
+	/* text-align: center; */
+	/* position: absolute; */
+}
+
+#sidebar li {
+	list-style: none;
+	padding: 5px;
+}
+
+#sidebar li img {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+}
+
+#sidebar a {
+	display: block;
+	line-height: 40px;
+	color: #fff;
+	text-decoration: none;
+}
+
+#sidebar a:hover {
+	background-color: #f0ebeb;
+	color: #000;
+}
+
+
+
+#content {
+	width: 85%;
+	/* height: calc(100vh - 75px); */
+	top: 75px;
+	margin-left: 15%;
+	overflow: auto;
+	position: absolute;
+	background: #000;
+}
+
+#content .card {
+	width: 22.9%;
+	height: 300px;
+	/* border: 1px solid #f00; */
+	margin-left: 15px;
+	margin-bottom: 50px;
+	margin-top: 10px;
+
+	float: left;
+	position: relative;
+}
+
+#content .up {
+	display: block;
+	width: 100%;
+	/* height: 69%; */
+	position: relative;
+	font-size: 0;
+
+	/* background: #888; */
+	/* border-radius: 10px; */
+}
+
+#content .up .timeR {
+	box-sizing: border-box;
+	display: inline-block;
+	position: absolute;
+	bottom: 10px;
+	right: 5px;
+	background: rgba(0, 0, 0, 0.7);
+	border-radius: 5px;
+	color: #fff;
+	padding: 3px;
+	font-size: 0.8rem;
+}
+
+#content .up:hover .timeR {
+	display: none;
+}
+
+#content .up:hover .timeL {
+	box-sizing: border-box;
+	display: inline-block;
+	position: absolute;
+	bottom: 16px;
+	left: 10px;
+	color: #fff;
+	padding: 3px;
+	font-size: 0.7rem;
+	font-weight: 300;
+}
+
+#content .up img {
+	width: 100%;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+#content .up:hover img {
+	border-radius: 10px;
+}
+
+#content .down {
+	box-sizing: border-box;
+	width: 100%;
+	height: 30%;
+	position: absolute;
+	top: 68%;
+	/* background: #eee; */
+	padding-top: 10px;
+}
+
+#content .down i {
+	position: absolute;
+	right: 10px;
+	top: 20%;
+	font-size: 0;
+	color: #fff;
+}
+
+#content .down:hover i {
+	position: absolute;
+	right: 10px;
+	font-size: 1rem;
+}
+
+#content .downLeft {
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	/* border: 1px solid #f00; */
+}
+
+#content .downLeft img {
+	width: 100%;
+	border-radius: 50%;
+}
+
+#content .downRight {
+	display: block;
+	position: absolute;
+	height: 40px;
+	left: 50px;
+}
+
+#content .text {
+	padding-bottom: 0.6rem;
+	padding-right: 30px;
+	line-height: 1.4rem;
+	color: #fff;
+	cursor: pointer;
+	display: block;
+}
+
+#content .text2 {
+	padding-bottom: 0.4rem;
+	font-size: 0.9rem;
+	cursor: pointer;
+	color: #eceaea;
+}
+
+#content .text3 {
+	font-size: 0.8rem;
+	cursor: pointer;
+	color: #eceaea;
+}
+
+
+
